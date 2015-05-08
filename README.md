@@ -30,3 +30,4 @@ Usage
 ]);
 echo Html::tag("div", "Your content or images.", ['class' => 'wow bounceInUp']);
 ```
+[See more options](http://akuma.su/blog/animatsiya-elementov-po-mere-prokrutki-stranitsy.html)
