@@ -11,7 +11,7 @@ namespace pavlinter\wow;
 
 /**
  * Class AnimateAsset
- * @link http://daneden.github.io/animate.css/
+ * @link http://daneden.github.io/animate.css
  */
 class AnimateAsset extends \yii\web\AssetBundle
 {
