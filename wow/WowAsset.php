@@ -8,6 +8,8 @@
  */
 
 namespace pavlinter\wow;
+use Yii;
+use yii\helpers\Json;
 
 /**
  * Class WowAsset
@@ -25,5 +27,17 @@ class WowAsset extends \yii\web\AssetBundle
     {
         $this->js[] = 'wow' . (YII_DEBUG ? '' : '.min') .'.js';
         parent::init();
+    }
+
+    /**
+     * @param array $options
+     * @param null $view
+     */
+    public function wow(array $options = [], $view = null)
+    {
+        if ($view === null) {
+            $view = Yii::$app->getView();
+        }
+        $view->registerJs('new WOW(' . Json::encode($options) . ').init();');
     }
 }
