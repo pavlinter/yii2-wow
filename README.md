@@ -23,5 +23,10 @@ to the require section of your `composer.json` file.
 Usage
 ------------------------
 ```php
-
+\pavlinter\wow\WowAsset::register($this)->wow([
+    'boxClass' => 'wow',
+    'animateClass' => 'animated',
+    'offset' => '0',
+]);
+echo Html::tag("div", "Your content or images.", ['class' => 'wow bounceInUp']);
 ```
